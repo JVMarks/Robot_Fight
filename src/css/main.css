@@ -1,0 +1,123 @@
+h2{
+    margin: 10px;
+    color: #F9E815;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#meuCanvas {
+    width: 1000px;
+    height:500px;
+    border: 1px solid #CCC;
+    border-radius: 8px 8px 8px 8px;
+    margin: 10px;
+    background-color: rgb(68, 182, 2);
+}
+
+
+.play-music {
+    display: -webkit-box;
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    z-index: 50;
+}
+  
+.music-animation {
+    display: -webkit-box;
+    display: flex;
+    margin-right: 10px;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    position: relative;
+    top: -5px;
+}
+
+.music-animation.on .bar {
+  -webkit-animation: bar 1.2s infinite;
+    animation: bar 1.2s infinite;
+}
+
+.music-animation.on .bar2 {
+    -webkit-animation-delay: .1s;
+     animation-delay: .1s;
+}
+
+.music-animation.on .bar3 {
+    -webkit-animation-delay: .2s;
+    animation-delay: .2s;
+}
+
+.music-animation.on .bar4 {
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+}
+
+.music-animation.on .bar5 {
+    -webkit-animation-delay: .4s;
+    animation-delay: .4s;
+}
+  
+.music-toggle {
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+}
+
+.music-toggle:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    background-color: #000;
+    position: absolute;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.music-toggle:hover:after {
+    width: 100%;
+}
+  
+.bar {
+    width: 1px;
+    background-color: #000;
+    height: 2px;
+    display: block;
+    margin: 0 1px;
+}
+  
+@-webkit-keyframes bar {
+    0% {
+      height: 4px;
+    }
+    50% {
+      height: 14px;
+    }
+    100% {
+      height: 4px;
+    }
+}
+  
+@keyframes bar {
+    0% {
+      height: 4px;
+    }
+    50% {
+      height: 14px;
+    }
+    100% {
+      height: 4px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    h2 img{
+     height: 25px;
+    }
+
+    #meuCanvas {
+       height: 90vh;
+       width: 90vw;
+    }
+}
