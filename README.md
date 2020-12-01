@@ -24,8 +24,6 @@
 <li><a href="https://www.w3schools.com/css/" rel="nofollow">CSS3</a></li>
    <li><a href="http://es6-features.org/#Constants" rel="nofollow">ES6</a></li>
 </ul>
-
-    
  <!--
  by https://github.com/JVMarks
 
